@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMotion AI | Cinematic Discovery</title>
+    <meta name="description" content="Experience the future of movie recommendations with CineMotion AI. Your intelligent guide to the world of cinema.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="intro-overlay" class="intro-overlay">
+        <div class="collage-background">
+            <!-- Column 1: Hollywood Classics -->
+            <div class="collage-column scroll-up">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" alt="Inception" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500'">
+                <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwMS00MTYxLWFmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="The Godfather" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500'">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjA4XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="Pulp Fiction" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500'">
+                <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwMS00MTYxLWFmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="The Godfather" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500'">
+            </div>
+            <!-- Column 2: Modern Blockbusters -->
+            <div class="collage-column scroll-down">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGVjN3RkZGQtMjNkOC00MTI3LTg1YWUtMTdmZDE4Y2UxOTgyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Joker" onerror="this.src='https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500'">
+                <img src="https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_.jpg" alt="Spider-Man No Way Home" onerror="this.src='https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500'">
+                <img src="https://m.media-amazon.com/images/M/MV5BN2Kzhj2hMjMtN2U0S00NWYzLWEyNzgtMGExNDk2OTU5NGE2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Dune" onerror="this.src='https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500'">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjgwNjM2ZjA0MV5BMl5BanBnXkFtZTgwMjE0MzcxMTE@._V1_.jpg" alt="Avatar" onerror="this.src='https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500'">
+            </div>
+            <!-- Column 3: Bollywood Hits -->
+            <div class="collage-column scroll-up">
+                <img src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctZDlhNC00ZGEyLWFkZDItMmY2Y2ExMWNlMzViXkEyXkFqcGdeQXVyODk2ODI3MTU@._V1_.jpg" alt="RRR" onerror="this.src='https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500'">
+                <img src="https://m.media-amazon.com/images/M/MV5BM2QzM2JiNTMtYjU4Ni00MDY4LWI3MzYtN2IyNWJmZjk3NThlXkEyXkFqcGdeQXVyNjU1OTg4OTM@._V1_.jpg" alt="Pathaan" onerror="this.src='https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500'">
+                <img src="https://m.media-amazon.com/images/M/MV5BM2JkNGU0ZGMtZjVjNS00NjgyLWEyOWYtZmUzY2JlODk1YzBhXkEyXkFqcGdeQXVyNjU1OTg4OTM@._V1_.jpg" alt="KGF 2" onerror="this.src='https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500'">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjA4NjM3NTc1OF5BMl5BanBnXkFtZTgwMTQ2NjE3MTI@._V1_.jpg" alt="Dangal" onerror="this.src='https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500'">
+            </div>
+        </div>
+        <div class="bokeh-container">
+            <div class="bokeh b1"></div>
+            <div class="bokeh b2"></div>
+            <div class="bokeh b3"></div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="logo-container">
+                <span class="clapper-icon">🎬</span>
+                <h1 class="logo-text">Cine<span class="motion-text">Motion</span></h1>
+            </div>
+
+            <div class="headline-container">
+                <h2 id="typing-text" class="main-headline"></h2>
+                <span class="cursor">|</span>
+            </div>
+
+            <p class="subtitle">Your cinematic AI — movies & web series, any mood.</p>
+
+            <button id="enter-btn" class="enter-btn">
+                Enter Experience <span class="arrow">→</span>
+            </button>
+
+            <div class="bottom-info">
+                <span id="loading-timer">Loading in 3s</span> — or click anywhere to skip
+            </div>
+        </div>
+
+        <div class="film-strip">
+            <div class="strip-track">
+                <span class="film-icon">⭐</span>
+                <span class="film-icon">🎬</span>
+                <span class="film-icon">🍿</span>
+                <span class="film-icon">📽️</span>
+                <span class="film-icon">⭐</span>
+                <span class="film-icon">🎬</span>
+                <span class="film-icon">🍿</span>
+                <span class="film-icon">📽️</span>
+                <!-- Repeat for seamless scroll if needed -->
+                <span class="film-icon">⭐</span>
+                <span class="film-icon">🎬</span>
+                <span class="film-icon">🍿</span>
+                <span class="film-icon">📽️</span>
+                <span class="film-icon">⭐</span>
+                <span class="film-icon">🎬</span>
+                <span class="film-icon">🍿</span>
+                <span class="film-icon">📽️</span>
+            </div>
+        </div>
+    </div>
+
+    <main id="app-container" class="hidden">
+
+        <!-- TOP NAVBAR -->
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <span class="nav-logo-icon">🎬</span>
+                <span class="nav-logo-text">Cine<span class="nav-motion">Motion</span></span>
+            </div>
+            <div class="nav-links-center">
+                <a href="#" class="nav-link active">Discover</a>
+                <a href="#" class="nav-link">Movies</a>
+                <a href="#" class="nav-link">Web Series</a>
+                <a href="#" class="nav-link">Trending</a>
+            </div>
+            <div class="nav-actions">
+                <div class="ai-status">
+                    <div class="status-dot"></div>
+                    <span>AI Online</span>
+                </div>
+                <button id="ask-ai-nav" class="nav-cta">Ask AI</button>
+            </div>
+        </nav>
+
+        <!-- MOVIES MARQUEE STRIP (Right to Left) -->
+        <section class="strip-section">
+            <div class="strip-header">
+                <h2 class="strip-title">🎬 Popular Movies</h2>
+                <span class="strip-badge">Live from TMDB</span>
+            </div>
+            <div class="marquee-wrapper">
+                <div class="marquee-track" id="movies-track">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- WEB SERIES MARQUEE STRIP (Left to Right) -->
+        <section class="strip-section">
+            <div class="strip-header">
+                <h2 class="strip-title">📺 Popular Web Series</h2>
+                <span class="strip-badge">Live from TMDB</span>
+            </div>
+            <div class="marquee-wrapper">
+                <div class="marquee-track reverse" id="series-track">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORY VIEW (Separate Page for Movies/Series/Trending) -->
+        <section id="category-view" class="category-view hidden">
+            <div class="category-header">
+                <button id="close-category" class="close-btn">← Back to Chat</button>
+                <h1 id="category-title" class="category-title">Movies</h1>
+            </div>
+            <div id="category-grid" class="category-grid">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
+        <!-- CHAT SECTION -->
+        <section id="main-chat" class="chat-section">
+            <div class="chat-section-header">
+                <h2>Your Mood, <span class="highlight">Our Command</span></h2>
+                <p>Chat with the CineMotion AI to find your perfect cinematic experience.</p>
+            </div>
+            
+            <div id="chat-messages" class="chat-messages">
+                <div class="message ai">
+                    <div class="avatar">🤖</div>
+                    <div class="message-content">
+                        <div class="message-bubble">Welcome back, Cinephile. What's your vibe today? Ask me for any movie or web series recommendation!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-area">
+                <div class="input-container">
+                    <textarea id="chat-input" placeholder="Ask for a vibe, genre, mood... or just say 'surprise me'" rows="1"></textarea>
+                    <button id="send-btn" class="send-btn">
+                        <span class="send-icon">✦</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🎬</span>
+                        <span class="logo-text">CineMotion<span class="accent-text">AI</span></span>
+                    </div>
+                    <p class="footer-tagline">Elevating your cinematic journey through the power of AI.</p>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" title="X">𝕏</a>
+                        <a href="#" title="Instagram">📸</a>
+                        <a href="#" title="GitHub">💻</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 CineMotion AI. All rights reserved.</p>
+                <p class="developer-credit">Developed with 🤍 by <span class="dev-name">CineMotion Team</span></p>
+            </div>
+        </footer>
+
+    </main>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
